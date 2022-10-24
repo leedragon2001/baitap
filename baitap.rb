@@ -1,7 +1,7 @@
 class Person
     @@number_of_persons = 0
     def initialize (n,a)
-        @@number_of_customers += 1
+        @@number_of_persons += 1
         @name, @age = n, a
     end
 
@@ -22,9 +22,10 @@ class Person
     end
     def set_age = (value)
         @age = value
+    end
 
     def total_count()
-      puts "Total number of people is #@@number_of_customers"
+      puts "Total number of people is #@@number_of_persons"
     end
 end
 
